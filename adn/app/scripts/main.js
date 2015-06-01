@@ -1,2 +1,5 @@
-/* jshint devel:true */
-console.log('\'Allo \'Allo!');
+// Carousel home
+
+$('#carousel-home').carousel({
+	interval: false
+});

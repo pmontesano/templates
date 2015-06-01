@@ -1,1 +1,1 @@
-console.log("'Allo 'Allo!");
+$("#carousel-home").carousel({interval:!1});

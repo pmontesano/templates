@@ -1,100 +1,181 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>adn</title>
+    <title>ADN</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
     <!-- build:css styles/vendor.css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/fontawesome/css/font-awesome.min.css">
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
-
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-  </head>
-  <body>
+</head>
+
+<body>
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">adn</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="adn-logo"><a href="#"><img src="images/logo.png" alt=""></a></h1>
+                </div>
+                <div class="col-md-8">
+                    <ul class="nav nav-pills pull-right">
+                        <li class="active"><a href="#">HOME</a></li>
+                        <li><a href="#">TEMPLATES</a></li>
+                        <li><a href="#">PAGES</a></li>
+                        <li><a href="#">ELEMENTS</a></li>
+                        <li><a href="#">WORKS</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li>
+                            <form action="" autocomplete="on">
+                                <input id="search" name="search" type="text" placeholder="Buscar..." class="search-input">
+                                <button id="search_submit" type="submit" class="search-button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
-      </div>
-    </div>
-
+    </header>
+    <!-- Banner slides -->
+    <section>
+        <div id="carousel-home" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/banner.jpg" alt="...">
+                    <div class="carousel-caption">
+                        <h3>
+                    LONG TERM <br>
+                    STORAGE OF INFORMATION
+                  </h3>
+                        <p>is the main function of the ADN theme</p>
+                        <p class="btn-actions">
+                            <a href="#" class="btn btn-primary">DOWNLOAD</a>
+                            <a href="#" class="btn btn-secondary">MORE INFORMATION</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/banner.jpg" alt="...">
+                    <div class="carousel-caption">
+                        <h3>
+                    LONG TERM <br>
+                    STORAGE OF INFORMATION
+                  </h3>
+                        <p>is the main function of the ADN theme</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">DOWNLOAD</a>
+                            <a href="#" class="btn btn-secondary">DOWNLOAD</a>
+                        </p>
+                    </div>
+                </div>
+                ...
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li class="col-md-4 col-sm-4 col-sx-12">
+                        <i class="fa fa-share-alt"></i>
+                        <h2>Lorem Ipsum is simply dummy text</h2>
+                        <p>of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                    </li>
+                    <li class="col-md-4 col-sm-4 col-sx-12">
+                        <i class="fa fa-share-alt"></i>
+                        <h2>Lorem Ipsum is simply dummy text</h2>
+                        <p>of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                    </li>
+                    <li class="col-md-4 col-sm-4 col-sx-12">
+                        <i class="fa fa-share-alt"></i>
+                        <h2>Lorem Ipsum is simply dummy text</h2>
+                        <p>of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                    </li>
+                    <li class="col-md-4 col-sm-4 col-sx-12">
+                        <i class="fa fa-share-alt"></i>
+                        <h2>Lorem Ipsum is simply dummy text</h2>
+                        <p>of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                    </li>
+                    <li class="col-md-4 col-sm-4 col-sx-12">
+                        <i class="fa fa-share-alt"></i>
+                        <h2>Lorem Ipsum is simply dummy text</h2>
+                        <p>of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                    </li>
+                    <li class="col-md-4 col-sm-4 col-sx-12">
+                        <i class="fa fa-share-alt"></i>
+                        <h2>Lorem Ipsum is simply dummy text</h2>
+                        <p>of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+    </footer>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+    (function(b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function() {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
     </script>
-
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
-        <!-- build:js scripts/plugins.js -->
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 </body>
+
 </html>

@@ -3,16 +3,17 @@
 
 @import "helpers/variables";
 
+// Base
+
+@import "base/reset";
+@import "base/globals";
+@import "base/typography";
+
 // Layout
 
 @import "layout/header";
 @import "layout/footer";
 @import "layout/forms";
-
-// Base
-
-@import "base/reset";
-@import "base/typography";
 
 // Themes
 
@@ -25,7 +26,8 @@
 
 // Components
 
+@import "components/banner";
 @import "components/buttons";
 @import "components/carousel";
 @import "components/navigation";
-
+@import "components/search";

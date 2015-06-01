@@ -4,7 +4,11 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
+var minifyCss = require('gulp-minify-css');
 var reload = browserSync.reload;
+
+
+// styles
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.scss')
@@ -16,12 +20,20 @@ gulp.task('styles', function () {
       onError: console.error.bind(console, 'Sass error:')
     }))
     .pipe($.postcss([
-      require('autoprefixer-core')({browsers: ['last 1 version']})
+      require('autoprefixer-core')({browsers: ['last 4 version']})
     ]))
-    .pipe($.sourcemaps.write())
-    .pipe(gulp.dest('.tmp/styles'))
+    // .pipe($.sourcemaps.write())
+    .pipe(gulp.dest('dist/styles'))
     .pipe(reload({stream: true}));
 });
+
+gulp.task('minify-css', function() {
+  return gulp.src('dist/styles/main.css')
+    .pipe(minifyCss({compatibility: 'ie8'}))
+    .pipe(gulp.dest('dist/styles/minify'));
+});
+
+// jshint
 
 gulp.task('jshint', function () {
   return gulp.src('app/scripts/**/*.js')
@@ -31,18 +43,22 @@ gulp.task('jshint', function () {
     .pipe($.if(!browserSync.active, $.jshint.reporter('fail')));
 });
 
-gulp.task('html', ['styles'], function () {
-  var assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
+// Minify html & css
 
-  return gulp.src('app/*.html')
-    .pipe(assets)
-    .pipe($.if('*.js', $.uglify()))
-    .pipe($.if('*.css', $.csso()))
-    .pipe(assets.restore())
-    .pipe($.useref())
-    .pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true})))
-    .pipe(gulp.dest('dist'));
-});
+// gulp.task('html', ['styles'], function () {
+//   var assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
+
+//   return gulp.src('app/*.html')
+//     .pipe(assets)
+//     .pipe($.if('*.js', $.uglify()))
+//     .pipe($.if('*.css', $.csso()))
+//     .pipe(assets.restore())
+//     .pipe($.useref())
+//     .pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true})))
+//     .pipe(gulp.dest('dist'));
+// });
+
+// comprimir imágenes
 
 gulp.task('images', function () {
   return gulp.src('app/images/**/*')
@@ -118,7 +134,7 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {
+gulp.task('build', ['styles','minify-css','jshint', 'images', 'fonts', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

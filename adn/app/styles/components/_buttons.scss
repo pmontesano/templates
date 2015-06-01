@@ -1,0 +1,30 @@
+// Buttons
+
+.btn-actions {
+	margin-top: 20px;
+}
+
+.btn {
+	border: solid 2px;
+	color: #FFF;
+	padding: 12px 25px;
+
+	&.btn-primary {
+		background-color: $color-red;
+		border-color: $color-red;
+	}
+
+	&.btn-secondary {
+		background-color: $color-transparent;
+		border-color: #FFF;
+	}
+
+	&.btn-tertiary {
+		background-color: $color-blue;
+		border-color: $color-blue;
+	}
+
+	& + .btn {
+		margin-left: 15px;
+	}
+}
