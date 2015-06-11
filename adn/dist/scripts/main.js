@@ -1,1 +1,0 @@
-$("#carousel-home").carousel({interval:!1});

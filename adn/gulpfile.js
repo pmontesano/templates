@@ -1,4 +1,4 @@
-/*global -$ */
+
 'use strict';
 // generated on 2015-05-18 using generator-gulp-webapp 0.3.0
 var gulp = require('gulp');
@@ -23,9 +23,29 @@ gulp.task('styles', function () {
       require('autoprefixer-core')({browsers: ['last 4 version']})
     ]))
     // .pipe($.sourcemaps.write())
-    .pipe(gulp.dest('dist/styles'))
+    .pipe(gulp.dest('.tmp/styles'))
     .pipe(reload({stream: true}));
 });
+
+
+// bourbon
+
+gulp.task('bourbon', function () {
+  return gulp.src('bower_components/bourbon/app/assets/stylesheets/bourbon.scss')
+    .pipe($.sourcemaps.init())
+    .pipe($.sass({
+      outputStyle: 'nested', // libsass doesn't support expanded yet
+      precision: 10,
+      includePaths: ['.'],
+      onError: console.error.bind(console, 'Sass error:')
+    }))
+    .pipe($.postcss([
+      require('autoprefixer-core')({browsers: ['last 4 version']})
+    ]))
+    .pipe(gulp.dest('bower_components/bourbon/app/assets/stylesheets/'))
+    .pipe(reload({stream: true}));
+});
+
 
 gulp.task('minify-css', function() {
   return gulp.src('dist/styles/main.css')

@@ -1,0 +1,33 @@
+.carousel {
+
+	& .carousel-caption {
+		text-align: left;
+		top: 0;
+		bottom:0;
+		margin: auto;
+		height: 270px;
+
+		& h3 {
+			font-size: $font-size-hero;
+			font-weight: $extra-bold;
+			max-width: 580px;
+		}
+
+		& p {
+			font-size: 22px;
+			font-weight: $light;
+			text-shadow: none;
+			margin: 30px 0;
+		}
+	}
+
+	& .carousel-control {
+		background: transparent;
+	}
+
+	& .carousel-control .adn-arrow-left {
+		background: url(../images/arrow.png) no-repeat;
+		width: 59px;
+		height: 62px;
+	}
+}

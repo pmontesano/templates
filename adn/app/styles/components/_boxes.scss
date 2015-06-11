@@ -1,0 +1,29 @@
+// Boxes
+
+.app-box-icon {
+
+	position: relative;
+	padding-left: 40px;
+	margin-bottom: 20px;
+
+	& h2 {
+		font-size: $font-size-title-article;
+		font-weight: $semi-bold;
+		color: $color-grey;
+	}
+
+	& i {
+		position: absolute;
+		top: 0;
+		left: 5px;
+	}
+
+	& i:before {
+		font-size: 24px;
+	}
+
+	& p {
+		line-height: 22px;
+	}
+
+}

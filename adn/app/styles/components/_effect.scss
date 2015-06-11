@@ -1,0 +1,10 @@
+// zoom
+
+.effect-zoom {
+	@include transition(all .5s);
+
+	&:hover {
+		@include transform(scale(1.1,1.1));
+	}
+
+}

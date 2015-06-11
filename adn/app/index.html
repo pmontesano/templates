@@ -25,14 +25,21 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h1 class="adn-logo"><a href="#"><img src="images/logo.png" alt=""></a></h1>
+        <header>
+
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h1 class="app-logo"><a href="#" class="navbar-brand"><img src="images/logo.png" alt=""></a></h1>
                 </div>
-                <div class="col-md-8">
-                    <ul class="nav nav-pills pull-right">
+                <div id="navbar" class="nav navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="#">HOME</a></li>
                         <li><a href="#">TEMPLATES</a></li>
                         <li><a href="#">PAGES</a></li>
@@ -40,17 +47,19 @@
                         <li><a href="#">WORKS</a></li>
                         <li><a href="#">SHOP</a></li>
                         <li>
-                            <form action="" autocomplete="on">
-                                <input id="search" name="search" type="text" placeholder="Buscar..." class="search-input">
-                                <button id="search_submit" type="submit" class="search-button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </form>
+                            <div class="search-container">
+                                <form action="" autocomplete="on">
+                                    <input id="search" name="search" type="text" placeholder="Buscar..." class="search-input">
+                                    <button id="search_submit" type="submit" class="search-button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </form>
+                            </div>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </div>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container -->
+        </nav>
     </header>
     <!-- Banner slides -->
     <section>
@@ -60,9 +69,8 @@
                     <img src="images/banner.jpg" alt="...">
                     <div class="carousel-caption">
                         <h3>
-                    LONG TERM <br>
-                    STORAGE OF INFORMATION
-                  </h3>
+                            LONG TERM STORAGE OF INFORMATION
+                        </h3>
                         <p>is the main function of the ADN theme</p>
                         <p class="btn-actions">
                             <a href="#" class="btn btn-primary">DOWNLOAD</a>
@@ -78,7 +86,7 @@
                     STORAGE OF INFORMATION
                   </h3>
                         <p>is the main function of the ADN theme</p>
-                        <p>
+                        <p class="btn-actions">
                             <a href="#" class="btn btn-primary">DOWNLOAD</a>
                             <a href="#" class="btn btn-secondary">DOWNLOAD</a>
                         </p>
@@ -97,37 +105,37 @@
             </a>
         </div>
     </section>
-    <section>
+    <section class="app-section-container">
         <div class="container">
             <div class="row">
                 <ul>
-                    <li class="col-md-4 col-sm-4 col-sx-12">
-                        <i class="fa fa-share-alt"></i>
+                    <li class="app-box-icon col-md-4 col-sm-4 col-sx-12">
+                        <i class="red fa fa-share-alt"></i>
                         <h2>Lorem Ipsum is simply dummy text</h2>
                         <p>of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
                     </li>
-                    <li class="col-md-4 col-sm-4 col-sx-12">
-                        <i class="fa fa-share-alt"></i>
+                    <li class="app-box-icon col-md-4 col-sm-4 col-sx-12">
+                        <i class="red fa fa-share-alt"></i>
                         <h2>Lorem Ipsum is simply dummy text</h2>
                         <p>of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
                     </li>
-                    <li class="col-md-4 col-sm-4 col-sx-12">
-                        <i class="fa fa-share-alt"></i>
+                    <li class="app-box-icon col-md-4 col-sm-4 col-sx-12">
+                        <i class="red fa fa-share-alt"></i>
                         <h2>Lorem Ipsum is simply dummy text</h2>
                         <p>of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
                     </li>
-                    <li class="col-md-4 col-sm-4 col-sx-12">
-                        <i class="fa fa-share-alt"></i>
+                    <li class="app-box-icon col-md-4 col-sm-4 col-sx-12">
+                        <i class="red fa fa-share-alt"></i>
                         <h2>Lorem Ipsum is simply dummy text</h2>
                         <p>of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
                     </li>
-                    <li class="col-md-4 col-sm-4 col-sx-12">
-                        <i class="fa fa-share-alt"></i>
+                    <li class="app-box-icon col-md-4 col-sm-4 col-sx-12">
+                        <i class="red fa fa-share-alt"></i>
                         <h2>Lorem Ipsum is simply dummy text</h2>
                         <p>of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
                     </li>
-                    <li class="col-md-4 col-sm-4 col-sx-12">
-                        <i class="fa fa-share-alt"></i>
+                    <li class="app-box-icon col-md-4 col-sm-4 col-sx-12">
+                        <i class="red fa fa-share-alt"></i>
                         <h2>Lorem Ipsum is simply dummy text</h2>
                         <p>of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
                     </li>
@@ -135,6 +143,70 @@
             </div>
         </div>
     </section>
+
+    <section class="app-section-container app-gallery-home bg-grey">
+        <h2 class="app-section-title">
+            LONG TERM
+        </h2>
+        <p class="app-section-subtitle">the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="images/gallery/1.jpg" alt="">
+                    <i class="fa fa-plus"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/gallery/2.jpg" alt="">
+                    <i class="fa fa-plus"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/gallery/3.jpg" alt="">
+                    <i class="fa fa-plus"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/gallery/4.jpg" alt="">
+                    <i class="fa fa-plus"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/gallery/5.jpg" alt="">
+                    <i class="fa fa-plus"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/gallery/6.jpg" alt="">
+                    <i class="fa fa-plus"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/gallery/7.jpg" alt="">
+                    <i class="fa fa-plus"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/gallery/8.jpg" alt="">
+                    <i class="fa fa-plus"></i>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="app-container bg-red app-section-download">
+        <div class="container text-center">
+            <h3>It contains the instructions needed to construct other components of cells <a href="" title="" class="btn btn-primary">DOWNLOAD NOW</a></h3>
+        </div>
+    </section>
+
     <footer>
     </footer>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

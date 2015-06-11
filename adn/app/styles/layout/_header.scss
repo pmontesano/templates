@@ -9,11 +9,9 @@ header {
 	right: 0;
 	z-index: 999;
 
-	& .nav {
-		margin-top: 30px;
+	& .nav,
+	& .app-logo {
+		margin-top: 10px;
 	}
 
-	& .adn-logo {
-		margin-top: 30px;
-	}
 }

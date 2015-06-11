@@ -1,0 +1,11 @@
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+@mixin transition ($transition) {
+	transition: $transition;
+}
+
+@mixin transform ($transform){
+	transform: $transform;
+}

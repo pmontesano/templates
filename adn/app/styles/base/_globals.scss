@@ -7,3 +7,81 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: $font-size-base;
 }
+
+a {
+	transition: color .5s ease;
+}
+
+p {
+	line-height: 16px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/*
+	Layout
+---------------------------------------------------*/
+
+.app-section-container {
+	padding: $padding-section-container;
+}
+
+.app-container {
+	padding: $padding-container;
+}
+
+/*
+	Colors
+---------------------------------------------------*/
+
+.red {
+	color: $color-red;
+}
+
+/*
+	Backgrounds
+---------------------------------------------------*/
+
+.bg-grey {
+	background: $bg-grey;
+	border-top: solid 1px #e5e5e5;
+}
+
+.bg-red {
+	background: $color-red;
+}
+
+/*
+	Headings
+---------------------------------------------------*/
+
+.app-section-title {
+	font-size: $font-size-title-section;
+}
+
+.app-section-subtitle {
+	margin: 20px 0 40px;
+}
+
+.app-section-title,
+.app-section-subtitle {
+	text-align: center;
+}
+
+/*
+	Aligment
+---------------------------------------------------*/
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}

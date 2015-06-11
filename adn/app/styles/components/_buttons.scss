@@ -2,6 +2,7 @@
 
 .btn-actions {
 	margin-top: 20px;
+	transition: all .3s;
 }
 
 .btn {
@@ -12,11 +13,20 @@
 	&.btn-primary {
 		background-color: $color-red;
 		border-color: $color-red;
+
+		.bg-red & {
+			border-color: #FFF;
+		}
 	}
 
 	&.btn-secondary {
 		background-color: $color-transparent;
 		border-color: #FFF;
+
+		&:hover {
+			color: $color-blue;
+			border-color: $color-blue;
+		}
 	}
 
 	&.btn-tertiary {
