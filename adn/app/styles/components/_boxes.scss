@@ -1,29 +1,44 @@
 // Boxes
 
-.app-box-icon {
 
-	position: relative;
-	padding-left: 40px;
-	margin-bottom: 20px;
+.app-box {
 
-	& h2 {
-		font-size: $font-size-title-article;
-		font-weight: $semi-bold;
-		color: $color-grey;
+	background: #FFF;
+	padding: 0;
+
+	&-content {
+		padding: 15px;
 	}
 
-	& i {
-		position: absolute;
-		top: 0;
-		left: 5px;
+	&-icon {
+
+		position: relative;
+		padding-left: 40px;
+		margin-bottom: 20px;
+
+		& h2 {
+			font-size: $font-size-title-article;
+			font-weight: $semi-bold;
+			color: $color-grey;
+		}
+
+		& i {
+			position: absolute;
+			top: 0;
+			left: 5px;
+		}
+
+		& i:before {
+			font-size: 24px;
+		}
+
+		& p {
+			line-height: 22px;
+		}
+
 	}
 
-	& i:before {
-		font-size: 24px;
+	& img {
+		width: 100%;
 	}
-
-	& p {
-		line-height: 22px;
-	}
-
 }

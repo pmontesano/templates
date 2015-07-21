@@ -47,7 +47,7 @@ a {
   transition: color .5s ease; }
 
 p {
-  line-height: 16px; }
+  line-height: 1.5em; }
 
 * {
   box-sizing: border-box; }
@@ -55,8 +55,12 @@ p {
 /*
 	Layout
 ---------------------------------------------------*/
+.app-grid {
+  margin: 0 auto;
+  max-width: 1200px; }
+
 .app-section-container {
-  padding: 50px 0; }
+  padding: 80px 0; }
 
 .app-container {
   padding: 30px 0; }
@@ -81,10 +85,13 @@ p {
 	Headings
 ---------------------------------------------------*/
 .app-section-title {
-  font-size: 30px; }
+  font-size: 30px;
+  color: #63757f;
+  text-transform: uppercase;
+  font-weight: 700; }
 
 .app-section-subtitle {
-  margin: 20px 0 40px; }
+  margin: 5px 0 40px; }
 
 .app-section-title, .app-section-subtitle {
   text-align: center; }
@@ -113,7 +120,13 @@ header {
   header .nav, header .app-logo {
     margin-top: 10px; }
 
-/* Section download */
+/* Section home boxes
+---------------------------------------------------*/
+.app-boxes li {
+  margin-bottom: 60px; }
+
+/* Section download
+---------------------------------------------------*/
 .app-section-download h3 {
   color: #FFF;
   font-size: 21px;
@@ -174,13 +187,13 @@ header {
       margin: auto; } }
 
 .btn-actions {
-  margin-top: 20px;
-  transition: all .3s; }
+  margin-top: 20px; }
 
 .btn {
   border: solid 2px;
   color: #FFF;
-  padding: 12px 25px; }
+  padding: 12px 25px;
+  transition: all .3s; }
   .btn.btn-primary {
     background-color: #f93b36;
     border-color: #f93b36; }
@@ -195,47 +208,123 @@ header {
   .btn.btn-tertiary {
     background-color: #378ffa;
     border-color: #378ffa; }
+    .btn.btn-tertiary:hover {
+      background-color: #252525;
+      border-color: #252525;
+      color: #FFF; }
+  .btn.btn-fourth {
+    background-color: transparent;
+    border-color: #63757f;
+    color: #63757f; }
+    .btn.btn-fourth:hover {
+      background-color: #63757f;
+      color: #FFF; }
   .btn + .btn {
     margin-left: 15px; }
 
-.app-box-icon {
-  position: relative;
-  padding-left: 40px;
-  margin-bottom: 20px; }
-  .app-box-icon h2 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #788797; }
-  .app-box-icon i {
-    position: absolute;
-    top: 0;
-    left: 5px; }
-  .app-box-icon i:before {
-    font-size: 24px; }
-  .app-box-icon p {
-    line-height: 22px; }
+.app-box, .app-card {
+  background: #FFF;
+  padding: 0; }
+  .app-box-content {
+    padding: 15px; }
+  .app-box-icon {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px; }
+    .app-box-icon h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #788797; }
+    .app-box-icon i {
+      position: absolute;
+      top: 0;
+      left: 5px; }
+    .app-box-icon i:before {
+      font-size: 24px; }
+    .app-box-icon p {
+      line-height: 22px; }
+  .app-box img, .app-card img {
+    width: 100%; }
 
-.carousel .carousel-caption {
+/* Carousel home
+------------------------------------------*/
+.carousel .carousel-control.left, .carousel .carousel-control.right {
+  background-image: none; }
+
+.carousel-hero .carousel-caption {
   text-align: left;
   top: 0;
   bottom: 0;
   margin: auto;
   height: 270px; }
-  .carousel .carousel-caption h3 {
+  .carousel-hero .carousel-caption h3 {
     font-size: 48px;
     font-weight: 800;
     max-width: 580px; }
-  .carousel .carousel-caption p {
+  .carousel-hero .carousel-caption p {
     font-size: 22px;
     font-weight: 300;
     text-shadow: none;
     margin: 30px 0; }
-.carousel .carousel-control {
+.carousel-hero .carousel-control {
   background: transparent; }
-.carousel .carousel-control .adn-arrow-left {
+.carousel-hero .carousel-control .adn-arrow-left {
   background: url(../images/arrow.png) no-repeat;
   width: 59px;
   height: 62px; }
+
+/* Carousel Testimony
+------------------------------------------*/
+.carousel-testimony {
+  height: 550px;
+  overflow: hidden;
+  position: relative; }
+  .carousel-testimony .item:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); }
+  .carousel-testimony .carousel-caption {
+    padding: 80px 0; }
+  .carousel-testimony h3 {
+    color: #FFF;
+    margin-bottom: 10px; }
+  .carousel-testimony h4 {
+    font-size: 14px;
+    font-weight: 500; }
+  .carousel-testimony .carousel-caption {
+    max-width: 760px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0; }
+  .carousel-testimony-text {
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: auto;
+    font-style: italic; }
+  .carousel-testimony-autor {
+    margin-top: 50px; }
+    .carousel-testimony-autor img {
+      border: solid 2px #FFF;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      max-width: 120px; }
+
+.app-list, .app-list-width-title {
+  font-size: 14px;
+  color: #63757f; }
+  .app-list li, .app-list-width-title li {
+    margin-bottom: 20px; }
+
+.app-list-width-title h3 {
+  font-weight: bold;
+  margin-bottom: 5px; }
 
 /*
 	Navigation
@@ -304,4 +393,5 @@ header {
     -webkit-transform: scale(1.1, 1.1);
         -ms-transform: scale(1.1, 1.1);
             transform: scale(1.1, 1.1); }
+
 

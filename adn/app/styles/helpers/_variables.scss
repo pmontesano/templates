@@ -25,11 +25,21 @@ $extra-bold: 800;
 $color-red: #f93b36;
 $color-blue: #378ffa;
 $color-grey: #788797;
+$color-navy-blue: #63757f;
 $color-transparent: transparent;
-$color-text: #788797;
+$color-title-default: $color-navy-blue;
+$color-text: $color-grey;
 
+
+// UI Colors
+
+$defaul:;
+$succes:;
+$error:;
+$info:;
+$warning:;
 
 // Layout
 
-$padding-section-container: 50px 0;
+$padding-section-container: 80px 0;
 $padding-container: 30px 0;

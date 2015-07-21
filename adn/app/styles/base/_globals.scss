@@ -13,7 +13,7 @@ a {
 }
 
 p {
-	line-height: 16px;
+	line-height: 1.5em;
 }
 
 * {
@@ -23,6 +23,11 @@ p {
 /*
 	Layout
 ---------------------------------------------------*/
+
+.app-grid {
+	margin: 0 auto;
+	max-width: 1200px;
+}
 
 .app-section-container {
 	padding: $padding-section-container;
@@ -59,10 +64,13 @@ p {
 
 .app-section-title {
 	font-size: $font-size-title-section;
+	color: $color-title-default;
+	text-transform: uppercase;
+	font-weight: $bold;
 }
 
 .app-section-subtitle {
-	margin: 20px 0 40px;
+	margin: 5px 0 40px;
 }
 
 .app-section-title,

@@ -1,4 +1,15 @@
-/* Section download */
+/* Section home boxes
+---------------------------------------------------*/
+
+.app-boxes {
+
+	& li {
+		margin-bottom: 60px;
+	}
+}
+
+/* Section download
+---------------------------------------------------*/
 
 .app-section-download {
 	& h3 {

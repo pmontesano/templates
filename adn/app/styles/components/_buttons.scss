@@ -2,13 +2,13 @@
 
 .btn-actions {
 	margin-top: 20px;
-	transition: all .3s;
 }
 
 .btn {
 	border: solid 2px;
 	color: #FFF;
 	padding: 12px 25px;
+	transition: all .3s;
 
 	&.btn-primary {
 		background-color: $color-red;
@@ -32,6 +32,23 @@
 	&.btn-tertiary {
 		background-color: $color-blue;
 		border-color: $color-blue;
+
+		&:hover {
+			background-color: #252525;
+			border-color: #252525;
+			color: #FFF;
+		}
+	}
+
+	&.btn-fourth {
+		background-color: $color-transparent;
+		border-color: $color-navy-blue;
+		color: $color-navy-blue;
+
+		&:hover {
+			background-color: $color-navy-blue;
+			color: #FFF;
+		}
 	}
 
 	& + .btn {
