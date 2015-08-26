@@ -1,0 +1,25 @@
+// Counter
+
+.app-counter {
+	color: $color-navy-blue;
+	text-align: center;
+
+	& i {
+		display: block;
+		font-size: 45px;
+		width: 50px;
+		height: 50px;
+		margin: 10px auto;
+	}
+
+	& span {
+		font-size: $font-size-title-section;
+		font-weight: $medium;
+	}
+
+	& p {
+		font-size: $font-size-medium;
+		font-weight: $light;
+		margin-top: 10px;
+	}
+}

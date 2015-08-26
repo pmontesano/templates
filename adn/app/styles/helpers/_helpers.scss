@@ -1,0 +1,36 @@
+// ==========================================================================
+// Helpers
+// ==========================================================================
+
+// Clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin center-block() {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+
+@mixin horizontal-center-block() {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+@mixin vertical-center-block() {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}

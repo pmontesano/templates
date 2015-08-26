@@ -9,3 +9,7 @@
 @mixin transform ($transform){
 	transform: $transform;
 }
+
+@mixin box-shadow ($box-shadow){
+	box-shadow: $box-shadow;
+}

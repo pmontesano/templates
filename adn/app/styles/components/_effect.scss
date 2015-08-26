@@ -8,3 +8,143 @@
 	}
 
 }
+
+.animation-column-image {
+
+	position: relative;
+	overflow: hidden;
+
+	&:before {
+		content: '';
+		background: $color-blue;
+		position: absolute;
+		width: 0;
+		height: 0;
+		left: 50%;
+		top: 50%;
+		opacity: 0;
+		@include transition(all .3s ease-out);
+		@include transform(translateX(-50%) translateY(-50%) rotate(45deg) translateZ(0));
+	}
+
+	& .fa-search {
+		font-size: 20px;
+		width: 20px;
+		height: 20px;
+		color: #FFF;
+		z-index: 500;
+		top: -50%;
+		position: absolute;
+		@include horizontal-center-block;
+		@include transition(all .2s ease-out);
+	 }
+
+	&:hover {
+		&:before {
+			height: 550%;
+			width: 120%;
+			opacity: .8;
+		}
+
+		& .fa-search {
+			@include center-block;
+		}
+	}
+
+}
+
+.animate-btn-hover {
+
+	position: relative;
+	overflow: hidden;
+
+	&:before {
+		content: '';
+		background: rgba(255,255,255,0);
+		position: absolute;
+		width: 0;
+		height: 0;
+		left: 50%;
+		top: 50%;
+		z-index: 1;
+		@include transition(all .3s ease-out);
+		@include transform(translateX(-50%) translateY(-50%) rotate(45deg) translateZ(0));
+	}
+
+	& span {
+		position: relative;
+		z-index: 2;
+	}
+
+	&:hover {
+		border-color: #fff;
+		color: #333;
+
+		&:before {
+			background: rgba(255,255,255,1);
+			height: 550%;
+			width: 120%;
+		}
+
+	    & span {
+			font-weight: $bold;
+		}
+
+	}
+}
+
+.animation-text-bottom-top {
+
+	&  p {
+		top: 100%;
+	    position: absolute;
+	    display: block;
+	    left: 0;
+	    right: 0;
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    padding: 20px;
+	    @include transition(all .3s ease-in);
+	}
+
+	&:hover p {
+		top: 30%;
+	}
+
+}
+
+.animation-bottom-top {
+
+	&  p,
+	& .btn {
+	    position: absolute;
+	    display: block;
+	    left: 0;
+	    right: 0;
+	}
+
+	& p {
+		top: 100%;
+	    padding: 20px;
+	    @include transition(all .3s ease-out);
+	}
+
+	& .btn {
+		top: 150%;
+		@include transition(all .4s ease-out);
+		margin: auto;
+		max-width: 200px;
+	}
+
+	&:hover {
+		p {
+			top: 40%;
+		}
+
+		.btn {
+			top: 80%;
+		}
+	}
+
+}

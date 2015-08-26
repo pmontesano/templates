@@ -3,6 +3,7 @@
 
 @import "helpers/variables";
 @import "helpers/mixins";
+@import "helpers/helpers";
 
 // Base
 
@@ -36,3 +37,4 @@
 @import "components/search";
 @import "components/effect";
 @import "components/card";
+@import "components/counter";

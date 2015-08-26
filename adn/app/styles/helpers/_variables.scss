@@ -1,14 +1,12 @@
 // Variables
 
-// Globals
-
-$body-bg: #FFF;
-$bg-grey: #fafafa;
-
-
 // Fonts
 
+$font-size-small: 12px;
 $font-size-base: 14px;
+$font-size-medium: 16px;
+$font-size-large: 20px;
+$font-size-big: 25px;
 $font-size-title-section: 30px;
 $font-size-title-article: 18px;
 $font-size-hero: 48px;
@@ -22,18 +20,22 @@ $extra-bold: 800;
 
 // Colors
 
+$color-white:#FFF;
 $color-red: #f93b36;
 $color-blue: #378ffa;
 $color-grey: #788797;
+$color-grey-light: #EDF2F4;
+$color-grey-dark: #323940;
 $color-navy-blue: #63757f;
 $color-transparent: transparent;
+$body-bg: $color-white;
 $color-title-default: $color-navy-blue;
 $color-text: $color-grey;
 
 
 // UI Colors
 
-$defaul:;
+$default:;
 $succes:;
 $error:;
 $info:;
@@ -41,5 +43,5 @@ $warning:;
 
 // Layout
 
-$padding-section-container: 80px 0;
+$padding-section-container: 60px 0;
 $padding-container: 30px 0;
